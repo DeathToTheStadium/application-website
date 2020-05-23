@@ -2,7 +2,7 @@
 I built this website as a way for me to learn and grow my it skills and 
 currently this is my third time trying to build a website that i can be proud of 
 so im going to be taking the time to build everything step by step 
-so ill be listing off everything i made in order so i can have a graphical tree and some commentary for myself so when i build the next website it doesnt end in solid failure like this one has 
+so ill be listing off everything i made in order so i can have a graphical tree and some commentary for myself so when i build the next website it doesnt end in solid failure like the last one has 
 
 __so lets get started__
 
