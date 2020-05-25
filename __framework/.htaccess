@@ -1,0 +1,2 @@
+#restrict access to the directory of the files
+Options -Indexes
