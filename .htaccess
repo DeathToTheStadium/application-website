@@ -1,4 +1,4 @@
-Options -Indexes
+
 
 # RewriteEngine On
 # RewriteCond %{HTTPS} off
@@ -18,3 +18,7 @@ Options -Indexes
 #    RewriteRule ^(.*)$ index.php/$1 [L]
 # </IfModule>
 
+#this is a htacsess file rul to handle redirects
+RewriteEngine ON
+
+ReWriteRule ^([^/]+)/?index.php?url=$1 [L,QSA]

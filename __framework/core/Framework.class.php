@@ -7,7 +7,7 @@ class Framework
       //  echo "run";
       self :: init();
       self :: autoload();
-      self :: dispatch();
+      // self :: dispatch();
    }
    //Initialize
 
@@ -37,41 +37,41 @@ class Framework
 
       //__public paths
 
-      define("CSS".PUBLIC_PATH.'css'.DS);
-      define("IMG".PUBLIC_PATH.'images'.DS);
-      define("JS".PUBLIC_PATH.'js'.DS);
-      define("UPLOAD".PUBLIC_PATH.'uploads'.DS);
+      define("CSS",PUBLIC_PATH.'css'.DS);
+      define("IMG",PUBLIC_PATH.'images'.DS);
+      define("JS",PUBLIC_PATH.'js'.DS);
+      define("UPLOAD",PUBLIC_PATH.'uploads'.DS);
 
       // Define platform, controller, action, for example:
 
     // index.php?p=admin&c=Goods&a=add
 
-    define("PLATFORM", isset($_REQUEST['p']) ? $_REQUEST['p'] : 'home');
+   //  define("PLATFORM", isset($_REQUEST['p']) ? $_REQUEST['p'] : 'home');
 
-    define("CONTROLLER", isset($_REQUEST['c']) ? $_REQUEST['c'] : 'Index');
+   //  define("CONTROLLER", isset($_REQUEST['c']) ? $_REQUEST['c'] : 'Index');
 
-    define("ACTION", isset($_REQUEST['a']) ? $_REQUEST['a'] : 'index');
+   //  define("ACTION", isset($_REQUEST['a']) ? $_REQUEST['a'] : 'index');
 
 
-    define("CURR_CONTROLLER_PATH", CONTROLLER_PATH . PLATFORM . DS);
+   //  define("CURR_CONTROLLER_PATH", CONTROLLER_PATH . PLATFORM . DS);
 
-    define("CURR_VIEW_PATH", VIEW_PATH . PLATFORM . DS);
+   //  define("CURR_VIEW_PATH", VIEW_PATH . PLATFORM . DS);
 
 
     // Load core classes
 
-    require CORE_PATH . "Controller.class.php";
+   //  require CORE_PATH . "Controller.class.php";
 
-    require CORE_PATH . "Loader.class.php";
+   //  require CORE_PATH . "Loader.class.php";
 
-    require DB_PATH . "Mysql.class.php";
+   //  require DB_PATH . "Mysql.class.php";
 
-    require CORE_PATH . "Model.class.php";
+   //  require CORE_PATH . "Model.class.php";
 
 
     // Load configuration file
 
-    $GLOBALS['config'] = include CONFIG_PATH . "config.php";
+   //  $GLOBALS['config'] = include CONFIG_PATH . "config.php";
 
 
     // Start session
@@ -82,7 +82,7 @@ class Framework
     // Autoloading
    public static function autoload()
    {
-      spl_autoload_register(array(__CLASS__,'load'));
+      // spl_autoload_register(array(__CLASS__,'load'));
    }
 
    function load()
